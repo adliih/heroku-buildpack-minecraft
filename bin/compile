@@ -58,6 +58,8 @@ done
 echo -n "-----> Installing ngrok... "
 curl --silent -o ngrok.zip -L "https://bin.equinox.io/c/4VmDzA7iaHb/ngrok-stable-linux-amd64.zip" | indent
 unzip ngrok.zip -d $BUILD_DIR/bin > /dev/null 2>&1
+# Configuration files
+cp -R $OPT_DIR/.ngrok2 $BUILD_DIR
 echo "done"
 
 minecraft_version=${MINECRAFT_VERSION:-"1.16.5"}

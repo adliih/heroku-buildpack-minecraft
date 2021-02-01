@@ -1,0 +1,9 @@
+log: stdout
+log-level: debug
+tunnels:
+  minecraft:
+    addr: 25566
+    proto: tcp
+  folder:
+    addr: file:///app
+    proto: http
